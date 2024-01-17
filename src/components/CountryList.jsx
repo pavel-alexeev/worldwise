@@ -12,7 +12,7 @@ export default function CountryList({ cities, isLoading }) {
     return (
       <Message message="Add your first city by clicking on a city on the map" />
     );
-
+  console.log(cities);
   const countries = cities.reduce(
     (arr, city) => {
       if (!arr.map((el) => el.country).includes(city.country))
